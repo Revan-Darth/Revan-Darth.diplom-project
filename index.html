@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<header>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>SuperTransparent</title>
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</header>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<div class="header__blackout"></div>
+					<div class="header__top">
+						<div class="header__logo">
+							<a class="header__logo-img logo-img" href="#"><img src="images/icons/Logo.svg" alt="Logo"></a>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__menu-list">
+								<li class="header__menu-item"><a class="header__menu-link" href="#about-us">О компании</a></li>
+								<li class="header__menu-item">
+									<a class="header__menu-link" href="#why-we">
+										Услуги
+									</a>
+									<ul class="header__sub-menu__list">
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Услуги на перевозку тяжёлых грузок</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Услуги на перевозку грузов средней массы</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Услуги на перевозку грузов малой массы</a></li>
+									</ul>
+								</li>
+								<li class="header__menu-item">
+									<a class="header__menu-link" href="#prices">
+										Тарифы
+									</a>
+									<ul class="header__sub-menu__list">
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Тарифы на авиаперевозку грузов по миру</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Тарифы на автоперевозки по миру</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Тарифы на морские грузоперевозки по миру</a></li>
+									</ul>
+								</li>
+								<li class="header__menu-item">
+									<a class="header__menu-link" href="#">
+										Виды перевозок
+									</a>
+									<ul class="header__sub-menu__list">
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Транспортные</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Корабельные</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Самолётом</a></li>
+									</ul>
+
+								</li>
+								<li class="header__menu-item">
+									<a class="header__menu-link" href="#footer">
+										Ещё
+									</a>
+									<ul class="header__sub-menu__list">
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Оформить заказ</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Частным лицам</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Юридическим лицам</a></li>
+										<li class="header__sub-menu-item"><a class="header__sub-menu-link" href="#">Наши филиалы</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__backuse">
+							<a class="header__backuse-number" href="tel:77777777777">
+								<div class="header__backuse-number--top">
+									<img class="header__backuse-number--image" src="images/icons/phone.svg" alt="Картинка телефона">
+									+7 (777) 777-77-77
+								</div>
+								<span class="header__backuse-number--bottom">Бесплатные звонки по России</span>
+							</a>
+							<a class="header__backuse-login popup-link" href="#popup-login">
+								<img src="images/icons/signin.svg" alt="Войти">
+								<p class="header__backuse-login--text">Войти</p>
+							</a>
+						</div>
+					</div>
+					<div class="header__content">
+						<div class="header__content-text">
+							<h1 class="header__title">Доставим хоть теплоходом, <br> хоть машиной, а если хочешь, то <br> и самолётом!</h1>
+							<p class="header__content-descr">Доставка абсолютно любого груза в любую точку мира за приемлимую стоимость.</p>
+						</div>
+						<div class="header__btn btn">
+							<a class="header__btn-link btn-link" href="#">Подробнее <img src="images/icons/arrow-right.svg" alt="Стрелочка вправо"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__login-popup popup" id="popup-login">
+				<div class="popup__body">
+					<div class="popup__content">
+						<div class="tabs__wrapper">
+							<div class="tabs header__login-tabs">
+								<a class="header__login-tab tab tab--active search__tabs-item" href="#tab-1">Вход</a>
+								<a class="header__login-tab tab search__tabs-item" href="#tab-2">Регистрация</a>
+							</div>
+						</div>
+						<div class="tabs__container">
+							<div id="tab-1" class="tabs__content tabs__content--active">
+								<form class="header__login-form" action="#">
+									<input type="email" placeholder="Введите Ваш логин" class="header__login-inp header__login-log">
+									<input type="password" placeholder="Введите Ваш пароль" class="header__login-inp header__login-pass">
+									<button class="header__login-btn">Войти</button>
+								</form>
+								<div class="header__login-bottom">
+									<a class="header__login-forgot" href="#">Забыли пароль?</a>
+								</div>
+							</div>
+							<div id="tab-2" class="tabs__content">
+								<form class="header__register-form" action="#">
+									<div class="header__register-form--contacts">
+										<input type="tel" placeholder="Номер телефона" class="header__login-inp">
+										<input type="email" placeholder="Ваш email" class="header__login-inp">
+									</div>
+									<input type="text" placeholder="Придумайте пароль" class="header__login-inp">
+									<button class="header__login-btn">Зарегистрироваться</button>
+								</form>
+							</div>
+						</div>
+						<a class="popup__close" href="#">&#10006</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="about" id="about-us">
+				<div class="container">
+					<h2 class="title about__title">О нас</h2>
+					<div class="about__inner">
+						<div class="tabs__wrapper">
+							<div class="tabs about__tabs">
+								<a class="about__tab tab tab--active search__tabs-item" href="#law">Законность</a>
+								<a class="about__tab tab search__tabs-item" href="#branches">Филиалы</a>
+								<a class="about__tab tab search__tabs-item" href="#offer">Предложения</a>
+							</div>
+						</div>
+						<div class="tabs__container">
+							<div id="law" class="about__tabs-content tabs__content tabs__content--active">
+								<div class="about__tabs-body">
+									<div class="about__tabs-image"><img src="images/content/pic2.jpg" alt="Изображение грузовой машины"></div>
+									<div class="about__tabs-text">
+										<h3 class="about__tabs-title">Легально ли это ?</h3>
+										<p class="about__tabs-descr">Безусловно да! Это всё легально, мы работаем уже достаточно долгое время за которое у нас появилось большое колличество постоянных клиентов, рекомендующих нас своим друзьям и знакомым. Также у нас имееются сертификаты от пожарной инспекции, медецинские страховки, различные сертификаты и многое другое, что вы увидите, более подробней ознакомившись с нашей деятельностью.</p>
+										<div class="about__tabs-btn btn">
+											<a  class="about__tabs-link btn-link" href="#">УЗНАТЬ ПОДРОБНЕЕ 
+												<svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.75 10H27.25M27.25 10L18.25 1M27.25 10L18.25 19" stroke="white" stroke-width="2"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="branches" class="about__tabs-content tabs__content">
+								<div class="about__tabs-body">
+									<div class="about__tabs-image"><img src="images/content/slide01.jpg" alt="Изображение грузового корабля"></div>
+									<div class="about__tabs-text">
+										<h3 class="about__tabs-title">Филиалы по миру и городам</h3>
+										<p class="about__tabs-descr about__tabs-descr--branches">Основной этап перевозки грузов – это транспортировка: груз загружается в одном филиале, далее доставляется в другой город, который Вам нужен.</p>
+										<p class="about__tabs-descr">Именно наличие филиалов в городах отправителя и получателя позволяет обеспечить разумную стоимость перевозки.</p>
+										<div class="about__tabs-btn btn">
+											<a  class="about__tabs-link btn-link" href="#">ПЕРЕЙТИ К ФИЛИАЛАМ 
+												<svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.75 10H27.25M27.25 10L18.25 1M27.25 10L18.25 19" stroke="white" stroke-width="2"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="offer" class="about__tabs-content tabs__content">
+								<div class="about__tabs-body">
+									<div class="about__tabs-image"><img src="images/content/dnata-ground-handling_web.jpg" alt="Изображение загрузки грузка в грузовой самолёт"></div>
+									<div class="about__tabs-text">
+										<h3 class="about__tabs-title">Наши предложения </h3>
+										<p class="about__tabs-descr">Обращаясь к нам, вы получаете возможность переправить посылку любого объема. Мы поможем оформить страховку и все документы. Выбираем удобный логистический путь, чтобы обеспечить быструю и надежную доставку в любую точку земного шара.</p>
+										<p class="about__tabs-attention">*все вопросы уточняются после подачи заявления на электронную почту, после чего наш сотрудник связывается с вами по телефону.</p>
+										<div class="about__tabs-btn btn">
+											<a  class="about__tabs-link btn-link" href="#">контакты</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="why" id="why-we">
+				<div class="container">
+					<h3 class="title why__title">Почему мы?</h3>
+					<div class="why__row">
+						<div class="why__item">
+							<div class="why__image"><img src="images/icons/box.png" alt="Картинка коробочки"></div>
+							<div class="why__text">
+								<p class="why__descr">Доставка и перевозка любого вида грузов в рамках закона</p>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__image"><img src="images/icons/clock.png" alt="Картинка часов"></div>
+							<div class="why__text">
+								<p class="why__descr">Самое быстрое время грузоперевозок по версии Forbes</p>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__image"><img src="images/icons/contract.png" alt="Картинка подписания контракта"></div>
+							<div class="why__text">
+								<p class="why__descr">Заключаем договор в обязательном порядке на наши услуги</p>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__image"><img src="images/icons/percentage.png" alt="Картинка процентов"></div>
+							<div class="why__text">
+								<p class="why__descr">Постоянным клиентам полагается процент на скидку</p>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__image"><img src="images/icons/progress.png" alt="Картинка прогресса"></div>
+							<div class="why__text">
+								<p class="why__descr">Мы работаем уже более 10 лет и за это время у нас накопился огромный опыт. И несмотря на это мы продолжаем развиваться</p>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__image"><img src="images/icons/safe-box.png" alt="Картинка сейфа"></div>
+							<div class="why__text">
+								<p class="why__descr">Во время перевозки Ваш груз защищён от любых внешних попыток взлома</p>
+							</div>
+						</div>
+					</div>
+					<div class="why__disscusion">
+						<div class="why__disscusion-image"><img src="images/content/collman.png" alt="Изображение звонящего человека"></div>
+						<div class="why__disscusion-inner">
+							<h4 class="why__disscusion-title">Мы всё обсудим</h4>
+							<p class="why__disscusion-descr">Заполните заявку на звонок и мы Вам перезвоним, обсудив все вопросы, которые возникнуть.</p>
+							<form class="why__disscusion-form" action="#">
+								<div class="why__disscusion-form--inputs">
+									<input type="text" class="why__disscusion-inp" placeholder="Имя">
+									<input type="tel" class="why__disscusion-inp" placeholder="Телефон">
+								</div>
+								<button class="why__disscusion-btn btn-form">Заказать звонок</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<article class="partners">
+				<div class="contaner">
+					<h2 class="partners__title title">Наши партнёры</h2>
+					<div class="slider-we swiper">
+					  <div class="slider-we__wrapper swiper-wrapper">
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/partners/Amazon_Logo.png" alt="Логотип Амазон"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/partners/Gazprom-Logo.png" alt="Логотип Газпром"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/partners/Google-Logo.png" alt="Логотип Гугл"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/partners/Mail.Ru-Logo.png" alt="Логотип Маил.ру"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/partners/Oil_and_Natural_Gas_Corporation-Logo.png" alt="Логотип Нефте-Газовой компании"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/partners/SpaceX-Logo.png" alt="Логотип Спэйс Икс"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/partners/Yandex-Logo.png" alt="Логотип Яндекс"></div></div>
+					  </div>
+					</div>
+				</div>
+			</article>
+			<article class="sertificate">
+				<div class="contaner">
+					<h2 class="sertificate__title title">Наши сертификаты</h2>
+					<div class="slider-we swiper">
+					  <div class="slider-we__wrapper swiper-wrapper">
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/sertificate/sertificate_1.jpg" alt="Фото сертификата"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/sertificate/sertificate_2.jpg" alt="Фото сертификата"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/sertificate/sertificate_3.jpg" alt="Фото сертификата"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/sertificate/sertificate_4.jpg" alt="Фото сертификата"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/sertificate/sertificate_5.jpg" alt="Фото сертификата"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/sertificate/sertificate_6.jpg" alt="Фото сертификата"></div></div>
+					    <div class="slider-we__item swiper-slide"><div class="slider-we__image"><img src="images/sertificate/sertificate_7.jpg" alt="Фото сертификата"></div></div>
+					  </div>
+					</div>
+				</div>
+			</article>
+			<section class="prices" id="prices">
+				<div class="container">
+					<h2 class="prices__title title">Цены на услуги</h2>
+					<div class="prices__columns">
+						<div class="prices__column">
+							<div class="prices__column-image"><img src="images/content/auto-transparent_price.png" alt="Изображение большой грузоперевозной машины"></div>
+							<div class="prices__column-text">
+								<h6 class="prices__column-title">Дальнобой</h6>
+								<p class="prices__column-descr">Для грузов, перевозимых на дальние расстояния или многогабаритные вещи, непомещаемые в обычные грузовые автомобили.</p>
+							</div>
+							<div class="prices__column-btns">
+								<div class="prices__column-btns--inner">
+									<span>150 ₽ / 1 км</span>
+									<a class="prices__column-link btn-form" href="#">Подробнее</a>
+								</div>
+								<a class="prices__column-link--order" href="#">ЗАКАЗАТЬ</a>
+							</div>
+						</div>
+						<div class="prices__column hit">
+							<div class="prices__column-hit">ХИТ</div>
+							<div class="prices__column-image"><img src="images/content/minibus-price.png" alt="Изображение средней грузоперевозной машины"></div>
+							<div class="prices__column-text">
+								<h6 class="prices__column-title">Среднебой</h6>
+								<p class="prices__column-descr">Для грузов, перевозимых на средние расстояния или вещи имеющие небольлшие размеры.</p>
+							</div>
+							<div class="prices__column-btns">
+								<div class="prices__column-btns--inner">
+									<span>100 ₽ / 1 км</span>
+									<a class="prices__column-link btn-form" href="#">Подробнее</a>
+								</div>
+								<a class="prices__column-link--order" href="#">ЗАКАЗАТЬ</a>
+							</div>
+						</div>
+						<div class="prices__column">
+							<div class="prices__column-image"><img src="images/content/auto-transparent_price_3.png" alt="Изображение небольшой грузоперевозной машины"></div>
+							<div class="prices__column-text">
+								<h6 class="prices__column-title">Малобой</h6>
+								<p class="prices__column-descr">Для грузов, перевозимых на небольшие расстояния с небольшим грузом. Идеально подходит для доставки в продуктов.</p>
+							</div>
+							<div class="prices__column-btns">
+								<div class="prices__column-btns--inner">
+									<span>75 ₽ / 1 км</span>
+									<a class="prices__column-link btn-form" href="#">Подробнее</a>
+								</div>
+								<a class="prices__column-link--order" href="#">ЗАКАЗАТЬ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="order-call">
+				<div class="container">
+					<h2 class="order-call__title title">Заказать звонок</h2>
+					<form class="order-call__form" action="#">
+						<div class="order-call__inputs">
+							<input class="order-call__inp" type="text" href="#" placeholder="Имя">
+							<input class="order-call__inp" type="text" href="#" placeholder="Фамилия">
+							<input class="order-call__inp" type="email" href="#" placeholder="E-mail">
+							<input class="order-call__inp" type="tel" href="#" placeholder="Номер телефона">
+						</div>
+						<button class="order-call__btn btn-form">Отправить</button>
+					</form>
+				</div>
+			</section>
+			<section class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48617.52686256028!2d55.193651618130794!3d25.084276719014824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1653598945448!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+		</main>
+
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer__row-item">
+						<div class="footer__logo">
+							<a class="logo-img" href="#"><img src="images/icons/Logo.svg" alt="Logo"></a>
+						</div>
+						<div class="footer__social">
+							<div class="footer__social-inner">
+								<a class="footer__social-link" href="https://ru.linkedin.com/"><img src="images/icons/LinkedIn-Icon-Logo.png" alt="Лого Линкед Ин"></a>
+								<a class="footer__social-link" href="https://www.tiktok.com/ru-RU/"><img src="images/icons/TikTok-Logo.png" alt="Лого ТикТок"></a>
+							</div>
+							<div class="footer__social-inner">
+								<a class="footer__social-link" href="https://www.youtube.com/"><img src="images/icons/YouTube-Icon-Full-Color-Logo.png" alt="Лого Ютуба"></a>
+								<a class="footer__social-link footer__social-link--inst" href="https://www.instagram.com/"><img src="images/icons/Instagram-Logo.png" alt="Лого Инстаграм"></a>
+							</div>
+							<div class="footer__social-inner">
+								<a class="footer__social-link" href="https://ru-ru.facebook.com/"><img src="images/icons/facebook.png" alt="Лого Фейсбука"></a>
+								<a class="footer__social-link" href="https://vk.com/"><img src="images/icons/VK_(service)-Logo.png" alt="Лого ВКонтакте"></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__row-item">
+						<h3 class="footer__row-title">О компании</h3>
+						<ul class="footer__list">
+							<li class="footer__list-item"><a class="footer__list-link" href="#">О нас</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Контакты</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Стать партнёром</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Полезная информация</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Отзывы</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Документы</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Реквизиты</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Филиалы</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Политика конфиденциальности</a></li>
+						</ul>
+					</div>
+					<div class="footer__row-item">
+						<h3 class="footer__row-title">Таможенное оформление</h3>
+						<ul class="footer__list">
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Что такое таможенное оформление,</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Для юридических лиц</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Для физических лиц</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Транзитные грузоперевозки</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Таможенное оформление грузов из Европы</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Таможенное оформление грузов из Америки</a></li>
+						</ul>
+					</div>
+					<div class="footer__row-item">
+						<h3 class="footer__row-title">Тарифы</h3>
+						<ul class="footer__list">
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Тарифы на авиаперевозку грузов по миру</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Тарифы на автоперевозки по миру</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">Тарифы на морские грузоперевозки по миру</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
